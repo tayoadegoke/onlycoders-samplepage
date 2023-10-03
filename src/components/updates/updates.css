@@ -1,0 +1,147 @@
+.filterContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filterContainer__title {
+    font-size: 11px;
+    padding: 5px 0 20px 0;
+    border-bottom: #00D2E0 solid 3px;
+    margin-bottom: 0;
+
+}
+
+.filterContainer__inputContainer {
+    position: relative;
+}
+
+.filterContainer__inputLabel {
+    position: absolute;
+    top: -0.7em;
+    z-index: 1;
+    left: 10px;
+    background-color: white;
+    padding: 0 5px;
+    font-size: 9px;
+    color: gray;
+
+}
+
+.filterContainer__input {
+    padding: 13px 10px;
+    margin-right: 15px;
+    border-radius: 8px;
+    border-color: rgb(231, 227, 227);
+    width: 130px;
+    position: relative;
+    font-size: 10px;
+    font-weight: 600;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.filterContainer__inputContainer::after {
+    content: "v";
+    font-size: 10px;
+    top: 13px;
+    right: 30px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.updateContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.update {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5;
+    justify-content: flex-start;
+
+}
+
+.updateDescription {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.updateDescription__title {
+    margin: 0;
+    font-size: 12px;
+    margin-right: 3px;
+
+}
+
+.updateDescription__action {
+    margin: 0;
+    font-size: 12px;
+    margin: 0 5px;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+}
+
+.update__time {
+    margin: 0;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+    margin-top: 5px;
+}
+
+.updateMessage {
+    color: gray;
+    font-size: 11px;
+    margin: 30px 15px 0 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(237, 237, 237);
+}
+
+.updateMessage__image {
+    max-width: 100%;
+}
+
+.updateMessageExtras {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    align-items: center;
+}
+
+.updateStats {
+    display: flex;
+    font-size: 10px;
+    justify-content: space-evenly;
+    width: 30%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.emoji {
+    display: flex;
+    align-items: center;
+}
+
+.emoji__count {
+    margin-left: 10px;
+    font-size: 10px;
+    padding-top: -20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .updateDescription__action {
+        margin-left: 0;
+    }
+
+    .updateStats {
+        width: 40%;
+        flex-wrap: wrap;
+    }
+}

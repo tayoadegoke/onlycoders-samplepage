@@ -11,7 +11,7 @@ function SideNavigation() {
     const [activeLi, setActiveLi] = useState(null)
 
 
-    /* regular icons are not available for all icons , that is why solid ones were used*/
+    /* regular icons are not available for all icons , that is why solid icons were used*/
     const sideNavItems = [
         <FontAwesomeIcon icon={faTv} />,
         <FontAwesomeIcon icon={faUser} />,

@@ -1,0 +1,57 @@
+.listItemIcon {
+    padding: 2px;
+    background-image: linear-gradient(210deg,
+            #4770F6 20%,
+            lightgrey 21%);
+    background-size: 100%, 2px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 32px;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    margin-right: 10px;
+}
+
+.listItemIcon__gap {
+    width: 25px;
+    height: 30px;
+    padding: 1px;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    background-color: #FFFFFF;
+}
+
+.listItemIcon__imgContainer {
+    width: 25px;
+    height: 30px;
+    margin-right: 15px;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+
+}
+
+.listItemIcon__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.listItemIcon__scoreIcon {
+    background-color: #44437D;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    width: 15px;
+    height: 15px;
+    z-index: 20000;
+    font-size: 6px;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+
+}
+
+.listItemIconContainer {
+    position: relative;
+}

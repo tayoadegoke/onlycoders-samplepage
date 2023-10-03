@@ -1,3 +1,9 @@
+.listItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .listItem__description {
     display: flex;
     flex-direction: column;
@@ -7,12 +13,13 @@
 
 .listItem__description__title {
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .listItem__description__handle {
-    margin-top: 0;
-    font-size: 12px;
+    margin-top: 2px;
+    font-size: 11px;
     font-weight: 100;
     color: #7d7c7c;
+    max-width: 90%;
 }

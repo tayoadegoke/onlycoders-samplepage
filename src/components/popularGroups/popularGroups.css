@@ -1,3 +1,11 @@
-.newestMembers {
-    width: 20%;
+.popularGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.popularGroup__icon {
+    color: #dfdfe7;
+    margin-right: 15px;
 }

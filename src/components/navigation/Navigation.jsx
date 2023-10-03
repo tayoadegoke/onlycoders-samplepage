@@ -2,10 +2,9 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import Logo from '../../assets/logo';
-import Filter from '../../assets/filter';
 
-
+import Logo from '../../assets/Logo';
+import Filter from '../../assets/Filter';
 
 import './navigation.css'
 
@@ -17,7 +16,7 @@ function Navigation() {
                     <div className='nav__logo'>
                         <Logo />
                     </div>
-                    <h3>SAMPLE PAGE</h3>
+                    <h3 className='nav_logoContainerText'>SAMPLE PAGE</h3>
                     <Filter />
                 </div>
                 <ul className='nav__list'>
