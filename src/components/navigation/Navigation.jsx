@@ -5,8 +5,8 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { motion } from 'framer-motion'
 
-import Logo from '../../assets/Logo.jsx';
-import Filter from '../../assets/Filter.jsx';
+import Logo from '../../assets/Logo'
+import Filter from '../../assets/Filter';
 import useIsMobile from '../../shared/hooks/useIsMobile';
 
 import './navigation.css'
