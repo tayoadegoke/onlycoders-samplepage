@@ -1,8 +1,8 @@
 import './App.css';
 
-import Navigation from './components/navigation/Navigation';
-import SideNavigation from './components/sideNavigation/SideNavigation';
-import Feed from './pages/feed/Feed';
+import Navigation from './components/navigation/navigation';
+import SideNavigation from './components/sideNavigation/sideNavigation';
+import Feed from './pages/feed/feed';
 
 function App() {
   return (

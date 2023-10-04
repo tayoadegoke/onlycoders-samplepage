@@ -8,10 +8,10 @@ import { motion } from 'framer-motion'
 
 //Libs
 import './feed.css'
-import NewestMembers from '../../components/newestMembers/NewestMembers'
-import PopularGroups from '../../components/popularGroups/PopularGroups'
-import AchievementCard from '../../components/achievementCard/AchievementCard'
-import Updates from '../../components/updates/Updates'
+import NewestMembers from '../../components/newestMembers/newestMembers'
+import PopularGroups from '../../components/popularGroups/popularGroups'
+import AchievementCard from '../../components/achievementCard/achievementCard'
+import Updates from '../../components/updates/updates'
 import useIsMobile from '../../shared/hooks/useIsMobile'
 
 
