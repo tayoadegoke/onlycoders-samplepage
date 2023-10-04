@@ -7,7 +7,7 @@ import { faFire } from '@fortawesome/free-solid-svg-icons'
 import { motion } from 'framer-motion'
 
 //Libs
-import './newsFeed.css'
+import './feed.css'
 import NewestMembers from '../newestMembers/NewestMembers'
 import PopularGroups from '../popularGroups/PopularGroups'
 import AchievementCard from '../achievementCard/AchievementCard'
