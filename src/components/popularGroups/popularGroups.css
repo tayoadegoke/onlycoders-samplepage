@@ -6,6 +6,6 @@
 }
 
 .popularGroup__icon {
-    color: #dfdfe7;
+    color: var(--main-lightgrey);
     margin-right: 15px;
 }

@@ -1,6 +1,6 @@
 .sidenav {
     width: 58px;
-    background-color: #FFFFFF;
+    background-color: var(--main-white);
     margin: 0;
     padding: 0;
     display: flex;
@@ -26,13 +26,28 @@
         background-color: rgba(1, 208, 222, 0.1);
         border-radius: 8px;
         box-shadow: 3px 9px 4px rgba(1, 208, 222, 0.1);
+        transform: scale(1.1);
     }
 }
 
 .sidenav__li--active {
-    background-color: #00D2DF !important;
+    background-color: var(--main-green) !important;
     border-radius: 8px;
-    color: #FFFFFF !important;
+    color: var(--main-white) !important;
     box-shadow: 3px 9px 4px rgba(1, 208, 222, 0.1);
 
+}
+
+
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
+
+    .sidenav {
+        flex-direction: row;
+        height: 50px;
+        width: 100vw;
+        box-shadow: none;
+        margin-top: -120px;
+        z-index: 4000;
+        justify-content: center;
+    }
 }

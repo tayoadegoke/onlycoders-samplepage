@@ -1,5 +1,5 @@
 .achievement {
-    border-bottom: 3px solid #dfdfe7;
+    border-bottom: 3px solid var(--main-lightgrey);
     padding-bottom: 5px;
     margin-bottom: 15px;
 }

@@ -8,7 +8,7 @@
 .filterContainer__title {
     font-size: 11px;
     padding: 5px 0 20px 0;
-    border-bottom: #00D2E0 solid 3px;
+    border-bottom: var(--main-green) 3px;
     margin-bottom: 0;
 
 }
@@ -22,10 +22,10 @@
     top: -0.7em;
     z-index: 1;
     left: 10px;
-    background-color: white;
+    background-color: var(--main-white);
     padding: 0 5px;
     font-size: 9px;
-    color: gray;
+    color: var(--main-darkgrey2);
 
 }
 
@@ -84,7 +84,7 @@
     margin: 0 5px;
     font-weight: 400;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: gray;
+    color: var(--main-darkgrey2);
 }
 
 .update__time {
@@ -92,16 +92,17 @@
     font-size: 10px;
     font-weight: 400;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: gray;
+    color: var(--main-darkgrey2);
     margin-top: 5px;
 }
 
 .updateMessage {
-    color: gray;
+    color: var(--main-darkgrey2);
     font-size: 11px;
     margin: 30px 15px 0 0;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgb(237, 237, 237);
+    border-bottom: 1px solid var(--main-darkgrey);
+    ;
 }
 
 .updateMessage__image {

@@ -1,8 +1,28 @@
-.App__main {
+.App__div {
   display: flex;
 }
 
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  .App__div {
+    flex-direction: column-reverse;
+  }
+}
+
+:root {
+  --main-blue: #5D5CF5;
+  --main-blue-dark: #4B4BC4;
+  --main-green: #00D2E0;
+  --main-darkgrey: #ededf2;
+  --main-darkgrey2: gray;
+  --main-lightgrey: #dfdfe7;
+  --main-white: #FFFFFF;
+  --main-black: #000000;
+
+
 }

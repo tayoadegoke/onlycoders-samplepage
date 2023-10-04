@@ -12,8 +12,8 @@ function ListItem({ title, description, isVerified = false, isUserIcon = false, 
             <ListItemIcon isUserIcon={isUserIcon} userScore={userScore} image={image} />
 
             <div className='listItem__description'>
-                <h3 className='listItem__description__title'>{title} <span>{isVerified && <FontAwesomeIcon icon={faCircleCheck} color='#05A2EE' />}</span></h3>
-                <p className='listItem__description__handle'>{isUserIcon && '@'}{`${description}`}</p>
+                <h3 className='listItem__title'>{title} <span>{isVerified && <FontAwesomeIcon icon={faCircleCheck} color='#05A2EE' />}</span></h3>
+                <p className='listItem__handle'>{isUserIcon && '@'}{`${description}`}</p>
             </div>
 
         </div>

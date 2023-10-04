@@ -4,6 +4,7 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBolt } from '@fortawesome/free-solid-svg-icons'
 import { faFire } from '@fortawesome/free-solid-svg-icons'
+import { motion } from 'framer-motion'
 
 //Libs
 import './newsFeed.css'
@@ -23,31 +24,31 @@ function NewsFeed() {
             <main className='newsfeed__container'>
                 <div className='newsfeed__banner'>
                     <img src='./newsfeed.jpeg' className='newsfeed__bannerImg' alt='newsfeed banner'></img>
-                    <div className='newsfeed__text'>
+                    <motion.div className='newsfeed__text' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 1 }}>
                         <h3 className='newsfeed__title'>Newsfeed</h3>
                         <p className='newsfeed__description'>Check what your friends have been up to!</p>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className='newsfeed__columnContainer'>
                     {(!isMobile || (activeColumn === 'newestMembers')) &&
 
-                        <div className='newsfeed__sideColumns'>
+                        <motion.div className='newsfeed__sideColumns' initial={{ opacity: 0, y: `${isMobile ? 0 : 3250}` }} animate={{ opacity: 1, y: 0 }} transition={{ duration: `${isMobile ? 0.3 : 1.2}`, stiffness: 150 }}>
 
                             <NewestMembers />
                             <AchievementCard heading={'Quests'} title={'Posting Machine'} description={'Posted more than 20 profile activities in one day'} image={'https://plus.unsplash.com/premium_photo-1675543163354-e4dc1f541330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3JleSUyMGdlbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'} />
 
-                        </div>
+                        </motion.div>
                     }
                     {((!isMobile) || (activeColumn === 'updates')) &&
-                        <div className='newsfeed__updates'>
+                        <motion.div className='newsfeed__updates' initial={{ opacity: 0, y: `${isMobile ? 0 : 3250}` }} animate={{ opacity: 1, y: 0 }} transition={{ duration: `${isMobile ? 0.3 : 1.2}`, stiffness: 150 }}>
                             <Updates />
-                        </div>
+                        </motion.div>
                     }{
                         ((!isMobile) || (activeColumn === 'popular')) &&
-                        <div className='newsfeed__sideColumns'>
+                        <motion.div className='newsfeed__sideColumns' initial={{ opacity: 0, y: `${isMobile ? 0 : 3250}` }} animate={{ opacity: 1, y: 0 }} transition={{ duration: `${isMobile ? 0.3 : 1.2}`, stiffness: 150 }}>
                             <PopularGroups />
                             <AchievementCard heading={'Badges'} title={'Globe Trotter'} description={'Has joined at least 10 different groups'} image={'https://plus.unsplash.com/premium_photo-1664304093466-3b4791d8ad6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ymx1ZSUyMGdlbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'} />
-                        </div>
+                        </motion.div>
                     }
 
 

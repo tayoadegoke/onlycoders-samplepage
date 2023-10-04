@@ -1,5 +1,5 @@
 .newsfeed {
-    background-color: #ededf2;
+    background-color: var(--main-darkgrey);
     height: 100vh;
     width: 100%;
     position: relative;
@@ -18,7 +18,7 @@
     justify-content: flex-start;
     border-radius: 12px;
     align-items: center;
-    background-image: linear-gradient(to right, #5D5EF5 20%, rgba(0, 236, 253, 0.8) 80%), url('../../../public/group.jpeg');
+    background-image: linear-gradient(to right, var(--main-blue) 20%, rgba(0, 236, 253, 0.8) 80%), url('../../../public/group.jpeg');
     background-repeat: repeat-x;
     margin-bottom: 1em;
 
@@ -44,14 +44,14 @@
 
 .newsfeed__title {
     font-size: 28px;
-    color: #FFFFFF;
+    color: var(--main-white);
     margin-bottom: 0;
 
 }
 
 .newsfeed__description {
     margin-top: 7px;
-    color: #FFFFFF;
+    color: var(--main-white);
     font-weight: 400;
     font-size: 12px;
 }
@@ -81,7 +81,7 @@
 }
 
 .columnSection {
-    background-color: #ffffff;
+    background-color: var(--main-white);
     box-shadow: 2px 2px 2px rgba(234, 233, 233, 0.4);
     border-radius: 5px;
     padding: 5px;
@@ -132,9 +132,16 @@
     }
 
     .newsfeed__mobileControl--active {
-        color: white;
-        background-color: rgba(0, 236, 253, 0.8);
+        color: var(--main-white);
+        background-color: var(--main-green);
 
 
+    }
+}
+
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
+
+    .newsfeed__container {
+        width: 90%;
     }
 }

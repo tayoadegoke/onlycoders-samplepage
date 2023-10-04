@@ -1,5 +1,4 @@
 import './App.css';
-//import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navigation from './components/navigation/Navigation';
 import SideNavigation from './components/sideNavigation/SideNavigation';
@@ -9,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Navigation/>
-      <div className='App__main'>
+      <div className='App__div'>
       <SideNavigation/>
        <NewsFeed/>
       </div>
