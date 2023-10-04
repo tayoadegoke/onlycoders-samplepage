@@ -2,7 +2,7 @@ import './App.css';
 
 import Navigation from './components/navigation/Navigation';
 import SideNavigation from './components/sideNavigation/SideNavigation';
-import NewsFeed from './pages/newsFeed/NewsFeed';
+import Feed from './pages/feed/Feed';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Navigation/>
       <div className='App__div'>
       <SideNavigation/>
-       <NewsFeed/>
+       <Feed/>
       </div>
      
     </div>

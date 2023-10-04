@@ -8,15 +8,15 @@ import { motion } from 'framer-motion'
 
 //Libs
 import './newsFeed.css'
-import NewestMembers from '../../components/newestMembers/NewestMembers'
-import PopularGroups from '../../components/popularGroups/PopularGroups'
-import AchievementCard from '../../components/achievementCard/AchievementCard'
-import Updates from '../../components/updates/Updates'
+import NewestMembers from '../newestMembers/NewestMembers'
+import PopularGroups from '../popularGroups/PopularGroups'
+import AchievementCard from '../achievementCard/AchievementCard'
+import Updates from '../updates/Updates'
 import useIsMobile from '../../shared/hooks/useIsMobile'
 
 
 
-function NewsFeed() {
+function Feed() {
     const isMobile = useIsMobile()
     const [activeColumn, setActiveColumn] = useState('updates')
     return (
@@ -66,4 +66,4 @@ function NewsFeed() {
     )
 }
 
-export default NewsFeed
+export default Feed
