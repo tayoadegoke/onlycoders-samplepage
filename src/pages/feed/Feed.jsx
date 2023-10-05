@@ -29,7 +29,7 @@ function Feed() {
                     </div>
                 }
                 <div className='newsfeed__banner'>
-                    <img src='./newsfeed.jpeg' className='newsfeed__bannerImg' alt='newsfeed banner'></img>
+                    <img src={window.location.origin + '/newsfeed.jpeg'} className='newsfeed__bannerImg' alt='newsfeed banner'></img>
                     <motion.div className='newsfeed__text' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 1 }}>
                         <h3 className='newsfeed__title'>Newsfeed</h3>
                         <p className='newsfeed__description'>Check what your friends have been up to!</p>
