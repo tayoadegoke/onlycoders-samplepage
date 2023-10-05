@@ -1,16 +1,14 @@
 {
   "files": {
     "main.css": "/onlycoders-samplepage/static/css/main.6ab2cf44.css",
-    "main.js": "/onlycoders-samplepage/static/js/main.659637eb.js",
-    "static/js/787.e577274b.chunk.js": "/onlycoders-samplepage/static/js/787.e577274b.chunk.js",
+    "main.js": "/onlycoders-samplepage/static/js/main.f57b2793.js",
     "static/media/group.jpeg": "/onlycoders-samplepage/static/media/group.21e677bb216e2db1f167.jpeg",
     "index.html": "/onlycoders-samplepage/index.html",
     "main.6ab2cf44.css.map": "/onlycoders-samplepage/static/css/main.6ab2cf44.css.map",
-    "main.659637eb.js.map": "/onlycoders-samplepage/static/js/main.659637eb.js.map",
-    "787.e577274b.chunk.js.map": "/onlycoders-samplepage/static/js/787.e577274b.chunk.js.map"
+    "main.f57b2793.js.map": "/onlycoders-samplepage/static/js/main.f57b2793.js.map"
   },
   "entrypoints": [
     "static/css/main.6ab2cf44.css",
-    "static/js/main.659637eb.js"
+    "static/js/main.f57b2793.js"
   ]
 }
