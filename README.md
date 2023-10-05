@@ -6,7 +6,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/tayoaegoke/onlycoders-samplepage">
-    <img src="newsfeed.jpeg" alt="Logo" width="80" height="80">
+    <img src="./public/newsfeed.jpeg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Only Coders Sample Page Coding Test</h3>
@@ -29,7 +29,6 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -46,12 +45,7 @@
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
 [![Product Name Screen Shot][product-screenshot]](https://tayoadegoke.github.io/onlycoders-samplepage/)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,20 +78,34 @@ Check out (https://nodejs.org/en/download) to download node and npm .
 
 3. To the start the application run 
    ```sh
-   npm install
+   npm start
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Folder Structure 
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+- public (Contains non code assets like images)
+- src 
+  - assets (Contains all code based assets like svg's in React components)
+  - components (Contains smaller bits of react components that make up pages)
+  - pages  (Folder to house all main pages of the app, in this case there was only one page)
+     - feed 
+  - shared (contains all functions and components shared across multiple components in the app)
+     - hooks (contains reusable react hooks )
+     - listItem 
+     - listItemIcon 
+     - memberTypeIcon  
+- App.js
+- mocks.js
+- package.json 
+- README.md
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: https://www.linkedin.com/in/omotayo-a-33a3a3120/
+[product-screenshot]: ./public/screenshot.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
