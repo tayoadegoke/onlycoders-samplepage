@@ -37,11 +37,11 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#installation">Installation and Start up</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Folder structure</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#folder">Folder structure</a></li>
+    <li><a href="#styling">Styling</a></li>
   </ol>
 </details>
 
@@ -84,6 +84,20 @@ Check out (https://nodejs.org/en/download) to download node and npm .
 
 ## Folder Structure 
 
+├── public
+├── src
+│   ├── assets
+│   ├── components
+│   ├── pages
+|   |   ├── feed
+│   ├── shared
+│   
+├──App.js
+├──mocks.js
+├── package.json
+├── package-lock.json 
+└── .gitignore
+
 - public (Contains non code assets like images)
 - src 
   - assets (Contains all code based assets like svg's in React components)
@@ -95,12 +109,20 @@ Check out (https://nodejs.org/en/download) to download node and npm .
      - listItem 
      - listItemIcon 
      - memberTypeIcon  
-- App.js
-- mocks.js
+- App.js (root App component)
+- mocks.js (contains all mock data for the app in arrays)
 - package.json 
 - README.md
 
 
+## Styling
+The root App.css file contains global styles and css properties used across the app
+The project also uses css files in the same folder that houses each component . 
+These css files contain all styles related to that particular component and imported via the component. 
+The project uses class selectors in the component that follow the BEM convention see (https://getbem.com/) 
+The project uses Media queries at the bottom of css files to target smaller screens, to achieve
+responsiveness. 
+The project uses the Framer motion package to achieve animations. see (https://www.framer.com/motion/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
