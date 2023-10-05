@@ -40,12 +40,12 @@
         <li><a href="#installation">Installation and Start up</a></li>
       </ul>
     </li>
-    <li><a href="#folder">Folder structure</a></li>
+    <li><a href="#folder-structure">Folder structure</a></li>
     <li><a href="#styling">Styling</a></li>
   </ol>
 </details>
 
-[![Product Name Screen Shot][product-screenshot]](https://tayoadegoke.github.io/onlycoders-samplepage/)
+[[product-screenshot]](https://tayoadegoke.github.io/onlycoders-samplepage/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,19 +84,7 @@ Check out (https://nodejs.org/en/download) to download node and npm .
 
 ## Folder Structure 
 
-├── public
-├── src
-│   ├── assets
-│   ├── components
-│   ├── pages
-|   |   ├── feed
-│   ├── shared
-│   
-├──App.js
-├──mocks.js
-├── package.json
-├── package-lock.json 
-└── .gitignore
+[[folder-structure]
 
 - public (Contains non code assets like images)
 - src 
@@ -116,18 +104,19 @@ Check out (https://nodejs.org/en/download) to download node and npm .
 
 
 ## Styling
-The root App.css file contains global styles and css properties used across the app
-The project also uses css files in the same folder that houses each component . 
-These css files contain all styles related to that particular component and imported via the component. 
-The project uses class selectors in the component that follow the BEM convention see (https://getbem.com/) 
-The project uses Media queries at the bottom of css files to target smaller screens, to achieve
+- The root App.css file contains global styles and css properties used across the app
+- The project also uses css files in the same folder that houses each component . 
+- These css files contain all styles related to that particular component and imported via the component. 
+- The project uses class selectors in the component that follow the BEM convention see (https://getbem.com/) 
+- The project uses Media queries at the bottom of css files to target smaller screens, to achieve
 responsiveness. 
-The project uses the Framer motion package to achieve animations. see (https://www.framer.com/motion/)
+- The project uses the Framer motion package to achieve animations. see (https://www.framer.com/motion/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/omotayo-a-33a3a3120/
 [product-screenshot]: ./public/screenshot.png
+[folder-structure]: ./public/folderstructure.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
