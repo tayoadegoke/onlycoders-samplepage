@@ -15,20 +15,28 @@ import Updates from '../../components/updates/updates'
 import useIsMobile from '../../shared/hooks/useIsMobile'
 
 
-
 function Feed() {
     const isMobile = useIsMobile()
     const [activeColumn, setActiveColumn] = useState('updates')
     return (
         <div className='newsfeed'>
             <main className='newsfeed__container'>
+                {isMobile &&
+                    <div className='newsfeed__mobileControlContainer'>
+                        <p onClick={() => setActiveColumn('newestMembers')} className={`newsfeed__mobileControl ${activeColumn === 'newestMembers' ? 'newsfeed__mobileControl--active' : null}`}><FontAwesomeIcon icon={faUsers} /></p>
+                        <p onClick={() => setActiveColumn('updates')} className={`newsfeed__mobileControl ${activeColumn === 'updates' ? 'newsfeed__mobileControl--active' : null}`}><FontAwesomeIcon icon={faBolt} /></p>
+                        <p onClick={() => setActiveColumn('popular')} className={`newsfeed__mobileControl ${activeColumn === 'popular' ? 'newsfeed__mobileControl--active' : null}`}><FontAwesomeIcon icon={faFire} /></p>
+                    </div>
+                }
                 <div className='newsfeed__banner'>
-                    <img src='./newsfeed.jpeg' className='newsfeed__bannerImg' alt='newsfeed banner'></img>
+                    <img src='/newsfeed.jpeg' className='newsfeed__bannerImg' alt='newsfeed banner'></img>
                     <motion.div className='newsfeed__text' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 1 }}>
                         <h3 className='newsfeed__title'>Newsfeed</h3>
                         <p className='newsfeed__description'>Check what your friends have been up to!</p>
                     </motion.div>
                 </div>
+
+
                 <div className='newsfeed__columnContainer'>
                     {(!isMobile || (activeColumn === 'newestMembers')) &&
 
@@ -53,13 +61,6 @@ function Feed() {
 
 
                 </div>
-                {isMobile &&
-                    <div className='newsfeed__mobileControlContainer'>
-                        <p onClick={() => setActiveColumn('newestMembers')} className={`newsfeed__mobileControl ${activeColumn === 'newestMembers' ? 'newsfeed__mobileControl--active' : null}`}><FontAwesomeIcon icon={faUsers} /></p>
-                        <p onClick={() => setActiveColumn('updates')} className={`newsfeed__mobileControl ${activeColumn === 'updates' ? 'newsfeed__mobileControl--active' : null}`}><FontAwesomeIcon icon={faBolt} /></p>
-                        <p onClick={() => setActiveColumn('popular')} className={`newsfeed__mobileControl ${activeColumn === 'popular' ? 'newsfeed__mobileControl--active' : null}`}><FontAwesomeIcon icon={faFire} /></p>
-                    </div>
-                }
 
             </main>
         </div>
