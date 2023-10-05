@@ -45,7 +45,7 @@
   </ol>
 </details>
 
-[[product-screenshot]](https://tayoadegoke.github.io/onlycoders-samplepage/)
+[![product-screenshot]](https://tayoadegoke.github.io/onlycoders-samplepage/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +84,7 @@ Check out (https://nodejs.org/en/download) to download node and npm .
 
 ## Folder Structure 
 
-[[folder-structure]
+[![folder-structure]
 
 - public (Contains non code assets like images)
 - src 
